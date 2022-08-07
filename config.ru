@@ -15,7 +15,7 @@ class App < Sinatra::Base
     { roll: dice_roll }.to_json
   end
   
-  get '/add/:num/:num2' do 
+  get '/add/:num1/:num2' do 
     num1 = params[:num1].to_i
     num1 = params[:num2].to_i
 
